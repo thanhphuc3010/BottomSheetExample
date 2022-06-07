@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/calculatorKeyboard">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/d_16"
+            android:text="Reset Depreciation"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            android:textColor="@color/colorPrimary"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_8"
+            android:layout_marginBottom="@dimen/d_8"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/d_16"
+            android:paddingEnd="@dimen/d_16">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Method"
+                android:textAppearance="?attr/textAppearanceBody1"
+                tools:ignore="HardcodedText" />
+
+            <LinearLayout
+                android:id="@+id/lytMethod"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d_8"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rounded_4dp_solid_white_stroke_gray500"
+                android:gravity="center_vertical"
+                android:padding="@dimen/d_4">
+
+                <TextView
+                    android:id="@+id/txtMethod"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/d_8"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="end"
+                    android:maxLines="1"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    tools:ignore="NestedWeights"
+                    tools:text="Straight Line" />
+
+                <ImageView
+                    android:id="@+id/btnSelectMethod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/actionBarItemBackground"
+                    android:contentDescription="@null"
+                    app:tint="@color/colorPrimary" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_8"
+            android:layout_marginBottom="@dimen/d_8"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/d_16"
+            android:paddingEnd="@dimen/d_16">
+
+            <TextView
+                android:id="@+id/txtDateLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Start Date"
+                android:textAppearance="?attr/textAppearanceBody1"
+                tools:ignore="HardcodedText" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d_8"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rounded_6dp_stroke_gray_400"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/d_8"
+                android:paddingTop="@dimen/d_4"
+                android:paddingEnd="@dimen/d_8"
+                android:paddingBottom="@dimen/d_4">
+
+                <TextView
+                    android:id="@+id/txtDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    tools:ignore="HardcodedText,NestedWeights"
+                    tools:text="01/01/2019" />
+
+                <ImageView
+                    android:id="@+id/btnSelectDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/d_8"
+                    android:background="?attr/actionBarItemBackground"
+                    android:contentDescription="@null"
+                    app:tint="@color/colorPrimary" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_8"
+            android:layout_marginBottom="@dimen/d_8"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/d_16"
+            android:paddingEnd="@dimen/d_16">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Type"
+                android:textAppearance="?attr/textAppearanceBody1"
+                tools:ignore="HardcodedText" />
+
+            <LinearLayout
+                android:id="@+id/lytAssetType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d_8"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rounded_4dp_solid_white_stroke_gray500"
+                android:gravity="center_vertical"
+                android:padding="@dimen/d_4">
+
+                <TextView
+                    android:id="@+id/txtType"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/d_8"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="end"
+                    android:maxLines="1"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    tools:ignore="NestedWeights"
+                    tools:text="Fixed Asset" />
+
+                <ImageView
+                    android:id="@+id/btnSelectType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/actionBarItemBackground"
+                    android:contentDescription="@null"
+                    app:tint="@color/colorPrimary" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_8"
+            android:layout_marginBottom="@dimen/d_8"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/d_16"
+            android:paddingEnd="@dimen/d_16">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cost"
+                android:textAppearance="?attr/textAppearanceBody1"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/txtCost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="0.00"
+                android:textAppearance="?attr/textAppearanceBody1"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_8"
+            android:layout_marginBottom="@dimen/d_8"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/d_16"
+            android:paddingEnd="@dimen/d_16">
+
+            <TextView
+                android:id="@+id/txtAmountLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="LifeTime"
+                android:textAppearance="?attr/textAppearanceBody1"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilAmount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d_8"
+                android:layout_weight="1"
+                android:gravity="end"
+                app:boxBackgroundColor="@color/white"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="@dimen/d_6"
+                app:boxCornerRadiusBottomStart="@dimen/d_6"
+                app:boxCornerRadiusTopEnd="@dimen/d_6"
+                app:boxCornerRadiusTopStart="@dimen/d_6"
+                app:boxStrokeColor="@color/md_gray_400"
+                app:boxStrokeWidth="1dp"
+                app:boxStrokeWidthFocused="1dp"
+                app:hintEnabled="false">
+
+                <com.example.bottomsheetexample.NumberFormatEditText
+                    android:id="@+id/edtLifeTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:inputType="numberDecimal"
+                    android:text="60"
+                    android:paddingStart="@dimen/d_8"
+                    android:paddingTop="@dimen/d_4"
+                    android:paddingEnd="@dimen/d_8"
+                    android:paddingBottom="@dimen/d_4"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?attr/textAppearanceBody1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_8"
+            android:layout_marginBottom="@dimen/d_8"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/d_16"
+            android:paddingEnd="@dimen/d_16">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Salvage Value"
+                android:textAppearance="?attr/textAppearanceBody1"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d_8"
+                android:layout_weight="1"
+                android:gravity="end"
+                app:boxBackgroundColor="@color/white"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="@dimen/d_6"
+                app:boxCornerRadiusBottomStart="@dimen/d_6"
+                app:boxCornerRadiusTopEnd="@dimen/d_6"
+                app:boxCornerRadiusTopStart="@dimen/d_6"
+                app:boxStrokeColor="@color/md_gray_400"
+                app:boxStrokeWidth="1dp"
+                app:boxStrokeWidthFocused="1dp"
+                app:hintEnabled="false">
+
+                <com.example.bottomsheetexample.NumberFormatEditText
+                    android:id="@+id/edtSalvage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:inputType="numberDecimal"
+                    android:paddingStart="@dimen/d_8"
+                    android:paddingTop="@dimen/d_4"
+                    android:paddingEnd="@dimen/d_8"
+                    android:paddingBottom="@dimen/d_4"
+                    android:selectAllOnFocus="true"
+                    android:text="0.00"
+                    android:textAppearance="?attr/textAppearanceBody1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginStart="@dimen/d_16"
+            android:layout_marginTop="@dimen/d_8"
+            android:layout_marginEnd="@dimen/d_16"
+            android:layout_marginBottom="@dimen/d_8"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCancel"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:text="@string/common_cancel"
+                android:textAppearance="?attr/textAppearanceBody1"
+                android:textColor="@color/colorPrimary"
+                app:cornerRadius="@dimen/d_6" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnResetNow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d_16"
+                android:background="@drawable/bg_rounded_4dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:text="Reset Now"
+                android:textAppearance="?attr/textAppearanceBody1"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/colorPrimary"
+                app:cornerRadius="@dimen/d_6" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.example.bottomsheetexample.CalculatorKeyboard
+        android:id="@+id/calculatorKeyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

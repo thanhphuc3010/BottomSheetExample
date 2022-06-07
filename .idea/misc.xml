@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidPractices/BottomSheetExample/app/src/main/res/drawable/bg_rounded_4dp.xml" value="0.2" />
+        <entry key="..\:/AndroidPractices/BottomSheetExample/app/src/main/res/drawable/bg_rounded_6dp_stroke_gray_400.xml" value="0.2805" />
+        <entry key="..\:/AndroidPractices/BottomSheetExample/app/src/main/res/drawable/ic_keyboard_backspace.xml" value="0.2" />
+        <entry key="..\:/AndroidPractices/BottomSheetExample/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/AndroidPractices/BottomSheetExample/app/src/main/res/layout/dialog_add_transaction.xml" value="0.25" />
+        <entry key="..\:/AndroidPractices/BottomSheetExample/app/src/main/res/layout/layout_calculator_keyboard.xml" value="0.35989583333333336" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

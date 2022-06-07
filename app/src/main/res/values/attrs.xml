@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SettingsItemView">
+        <attr name="drawableThumbnail" format="reference" />
+        <attr name="title" format="string" />
+        <attr name="description" format="string" />
+        <attr name="thumbnail_background" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CurrencyEditText">
+        <attr name="currency_symbol" format="string" />
+        <attr name="show_currency" format="boolean" />
+        <attr name="show_commas" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="EmailPhoneFormatEditText">
+        <attr name="is_input_phone" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="NumberFormatEditText">
+        <attr name="isPercentTax" format="boolean" />
+    </declare-styleable>
+</resources>
